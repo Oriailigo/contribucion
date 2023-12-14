@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Sitio Web</title>
+</head>
+<body>
+
+    <nav id="navbar" role="navigation" aria-label="Menú de Navegación">
+        <div id="logoID" class="logo" tabindex="0" aria-label="si decea saltearse el menu e ir al contenido principal debe serleccionar el boton enter.">
+            <img src="tu_logo.png" alt="Logo">
+        </div>
+        <div class="menu" aria-label="Menú de navegación">
+            <button id="menuBtn" class="dropbtn" aria-haspopup="true" aria-expanded="false">☰</button>
+            <div id="menuItems" aria-hidden="true" class="dropdown-content" tabindex="0" onkeydown="navegarTeclado(event)">
+                <button id="closeBtn" tabindex="0" aria-label="Cerrar menú">×</button>
+                <a href="#" tabindex="0">Inicio</a>
+                <a href="#" tabindex="0">Sobre nosotros</a>
+                <a href="#" tabindex="0">Servicios</a>
+                <a href="#" tabindex="0" id="contactoID">Contacto</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main tabindex="0" id="content" role="main" aria-label="Estas en la seccion principal.">
+        <h1 tabindex="0">Titulo Principal</h1>
+        <h2 tabindex="0">Subtítulo 1</h2>
+        <p tabindex="0">Párrafo accesible</p>
+        <h2 tabindex="0">Subtítulo 2</h2>
+        <p tabindex="0">Otro párrafo accesible</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
